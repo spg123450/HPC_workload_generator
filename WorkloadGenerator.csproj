@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<!-- Updated to match your specific Windows 10 target and minimum versions -->
+		<TargetFramework>net8.0-windows10.0.22000.0</TargetFramework>
+		<TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UseRidGraph>true</UseRidGraph>
+		<RuntimeIdentifiers>win-x64;win-x86;win-arm64</RuntimeIdentifiers>
+		<WindowsPackageType>None</WindowsPackageType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="A2A" Version="0.3.4-preview" />
+		<PackageReference Include="A2A.AspNetCore" Version="0.3.4-preview" />
+		<PackageReference Include="log4net" Version="3.3.1" />
+		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.230913002" />
+		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.755" />
+		<PackageReference Include="Net.Utils.TaskManager" Version="1.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="log4net" Version="3.3.1" />
+		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.230913002" />
+		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.755" />
+	</ItemGroup>
+
+	<!-- Uncomment and point to an actual .manifest file if your app requires elevated permissions or specific Windows UI identities -->
+	<!-- <ItemGroup>
+    <Manifest Include="$(ApplicationManifest)" />
+  </ItemGroup> -->
+
+</Project>
